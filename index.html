@@ -21,32 +21,31 @@
 <body>
   <model-viewer
     src="./pusheen_vs_noodle.glb"
-    alt="pusheen vs noodle"
+    ios-src="./pusheen_ramenUwU.usdz"
+    alt="Котик Pusheen с раменом"
     camera-controls
     autoplay
     ar
-    ar-modes="webxr scene-viewer"
+    ar-modes="webxr scene-viewer quick-look"
     shadow-intensity="0.56">
-
+    
     <button slot="ar-button" id="ar-button"
-  style="
-    position: absolute;
-    bottom: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 16px 28px;
-    border: none;
-    border-radius: 14px;
-    background: #FF6D83;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    z-index: 10;
-    white-space: nowrap;
-    cursor: pointer;
-  ">
-  Посмотреть в AR
-</button>
+      style="
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 16px 28px;
+        border: none;
+        border-radius: 14px;
+        background: #FF6D83;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        z-index: 10;
+      ">
+      Посмотреть в AR
+    </button>
 
 </model-viewer>
   <script>
