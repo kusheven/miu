@@ -44,7 +44,13 @@
     ar
     ar-modes="webxr scene-viewer quick-look"
     shadow-intensity="0.56">
-    
+    <effect-composer render-mode="quality">
+  <bloom-effect
+    strength="0.7"
+    radius="0.6"
+    threshold="0.5">
+  </bloom-effect>
+</effect-composer>
     <button slot="ar-button" id="ar-button"
       style="
         position: absolute;
