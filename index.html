@@ -32,10 +32,21 @@
   const model = document.querySelector('model-viewer');
 
   model.addEventListener('load', () => {
-    alert(
-      'Найденные анимации:\n' +
-      model.availableAnimations.join('\n')
-    );
+    const animations = model.availableAnimations;
+
+    if (animations.length === 0) return;
+
+    // Запускаем первую анимацию
+    model.animationName = animations[0];
+    model.play();
+
+    // Добавляем остальные одновременно
+    animations.slice(1).forEach(name => {
+      model.appendAnimation(name, {
+        weight: 1,
+        timeScale: 1
+      });
+    });
   });
 </script>
 </body>
