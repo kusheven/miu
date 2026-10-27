@@ -27,6 +27,25 @@
     ar
     ar-modes="scene-viewer webxr"
     shadow-intensity="0.56">
+
+    <button slot="ar-button" style="
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 15px 24px;
+        border: none;
+        border-radius: 12px;
+        background: #FF6D83;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        z-index: 10;
+        white-space: nowrap;
+    ">
+        Посмотреть в AR
+    </button>
+
 </model-viewer>
   <script>
   const model = document.querySelector('model-viewer');
