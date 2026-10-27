@@ -28,5 +28,15 @@
     ar-modes="scene-viewer webxr"
     shadow-intensity="0.56">
 </model-viewer>
+  <script>
+  const model = document.querySelector('model-viewer');
+
+  model.addEventListener('load', () => {
+    alert(
+      'Найденные анимации:\n' +
+      model.availableAnimations.join('\n')
+    );
+  });
+</script>
 </body>
 </html>
