@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -6,25 +5,9 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1">
   <title>Pusheen AR</title>
-  <script async
-  src="https://ga.jspm.io/npm:es-module-shims@1.7.1/dist/es-module-shims.js">
-</script>
-
-<script type="importmap">
-{
-  "imports": {
-    "three": "https://cdn.jsdelivr.net/npm/three@0.172.0/build/three.module.js"
-  }
-}
-</script>
-
-<script type="module"
-  src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer-module.min.js">
-</script>
-
-<script type="module"
-  src="https://cdn.jsdelivr.net/npm/@google/model-viewer-effects/dist/model-viewer-effects.min.js">
-</script>
+  <script type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js">
+  </script>
   <style>
     body { margin: 0; background: #FFD9E2; }
     model-viewer {
@@ -44,13 +27,7 @@
     ar
     ar-modes="webxr scene-viewer quick-look"
     shadow-intensity="0.56">
-    <effect-composer render-mode="quality">
-  <bloom-effect
-    strength="3"
-    radius="0.85"
-    threshold="0">
-  </bloom-effect>
-</effect-composer>
+    
     <button slot="ar-button" id="ar-button"
       style="
         position: absolute;
